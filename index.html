@@ -5,36 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
-
 <body>
 
     <header class="header">
         <nav class="header__nav">
+            <a href="./index.html">
+                <h3 class="header__logo">MUSIC CLASS</h3>
+            </a>
             <ul class="header__wrapper">
                 <li>
-                    <a href="./sections/clases.html">CLASES</a>
+                    <a href="./index.html" class="nav-link">INICIO</a>
                 </li>
                 <li>
-                    <a href="./sections/covers.html">COVER</a>
-                </li>
-                <a href="index.html">
-                    <h3 class="header__logo">MUSIC CLASS</h3>
-                </a>
-
-                <li>
-                    <a href="./sections/sobremi.html">SOBRE MI</a>
+                    <a href="./sections/clases.html" class="nav-link">CLASES</a>
                 </li>
                 <li>
-                    <a href="./sections/contacto.html">CONTACTO</a>
+                    <a href="./sections/covers.html" class="nav-link">COVER</a>
+                </li>
+                <li>
+                    <a href="./sections/sobremi.html" class="nav-link">NOSOTROS</a>
+                </li>
+                <li>
+                    <a href="./sections/contacto.html" class="nav-link">CONTACTO</a>
                 </li>
             </ul>
         </nav>
 
     </header>
-
 
     <section class="hero">
         <div class="hero__contain">
@@ -50,8 +51,8 @@
         </div>
     </section>
 
-    <main class="main">
-        <section class="banner">
+    <main class="container grid">
+        <section class="banner" id="section-banner">
             <p>
                 creando y creciendo <br>
                 desde 2000
@@ -59,11 +60,11 @@
             <img src="./img/disc.png" alt="">
         </section>
         
-        <section class="cursos">
+        <section class="cursos" id="section-cursos">
             <article class="cursos__contain">
                 <h3 class="cursos__titulo">
-                    ENFOCADOS <br>
-                    EN TUTORIAS <br>
+                    ENFOCADOS
+                    EN TUTORIAS
                     LIBRES
                 </h3>
                 <a href="./sections/clases.html">
@@ -72,11 +73,32 @@
                     </button>
                 </a>
             </article>
-            <img class="cursos__img" src="./img/piano.png" alt="foto de piano">
         </section>
+
+        <div id="section-img">
+            <img class="cursos__img" src="./img/piano.png" alt="foto de piano">
+        </div>
         
-        
+        <form id="section-form" class="my-5">
+            <h2>Contacto</h2>
+            
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+           
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
     </main>
+    
 
     <footer class="footer">
 
@@ -103,6 +125,7 @@
         </div>
     </footer>
 
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+</body>
 </html
