@@ -2,7 +2,7 @@
 
 
 :root {
-    --color-primario: black;
+    --color-primario: #f4eee8;
     --color-white: #fff;
     --color-brown: #6d5b47;
     --font-bold: 800;
@@ -175,6 +175,7 @@ body {
     justify-content: space-between;
     color: var(--color-brown);
     height: 150px;
+    padding: 20px;
 }
 
 
@@ -232,6 +233,7 @@ body {
     width: 100%;
     color: var(--color-brown);
     font-weight: 800;
+    padding: 20px;
 }
 .cursos__img {
     border-radius: 40px;
@@ -239,6 +241,10 @@ body {
     width: 100%;
     object-fit: cover;
     padding: 10px;
+            
+}
+.cursos__parrafo {
+    padding: 20px;
 }
 @media (min-width: 768px) {
     
