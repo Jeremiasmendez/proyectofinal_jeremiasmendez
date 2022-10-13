@@ -1,0 +1,35 @@
+.hero {
+    background-image: url(../img/mic.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__contain {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__title {
+        font-size: 4rem;
+        color: var(--color-white);
+        font-weight: var(--font-bold);
+    }
+}
+
+.banner {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-brown);
+    height: 150px;
+    padding: 20px;
+}
+

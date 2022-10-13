@@ -32,7 +32,6 @@ body {
     height: 70px;
     border-radius: 40px;
     cursor: pointer;
-    margin-left: 10px;
     font-weight: var(--font-bold);    
     transition: background-color .3s ease-in-out;
 }
@@ -255,10 +254,96 @@ body {
         height: 500px;
     }
 }
+/* COVER */
+
+.cover {   
+    width: 100%;
+}
+.cover__contain {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    
+}
+.cover__titulo {
+    font-size: 2.5rem;
+    width: 100%;
+    color: var(--color-brown);
+    font-weight: 800;
+    padding: 20px;
+}
+.cover__img {
+    border-radius: 40px;
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    padding: 10px;
+            
+}
+.cover__parrafo {
+    padding: 20px;
+}
+@media (min-width: 768px) {
+    
+    .cover__titulo {
+        font-size: 5rem;
+    }
+    .cover__img {
+        height: 500px;
+    }
+}
+
+/* SOBRE NOSOTROS */
+
+.integrante {
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+}
+
+.integrante__img  img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    padding: 20px;
+}
+
+.integrante__name {
+    font-size: 2.5rem;
+    width: 100%;
+    color: var(--color-brown);
+    font-weight: 800;
+    padding: 20px;
+}
+
+.integrante__parrafo {
+    padding: 20px;
+}
+
+@media (min-width :768px) {
+    .integrante {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+    
+
+/* CONTACTO */
+
+.formulario {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* FOOTER */
 
 .footer {
+    flex-direction: column;
     background-color: var(--color-brown);
-    height: 200px;
+    height: 300px;
     padding: 50px;
     display: flex;
     align-items: center;
@@ -269,7 +354,23 @@ body {
     font-size: 50px;
 }
 
+.footer__social{
+    display:flex;
+    min-width: 300px ;
+    justify-content: space-between;
+}
 
+.icon {
+    padding: 0;
+    margin: 0;
+}
+@media screen and (min-width: 768px) {
+    .footer {
+        flex-direction: row;
+        height: 200px;
+    }
+    
+}
 
 .card {
     display: flex;

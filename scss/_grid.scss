@@ -1,0 +1,36 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        'banner'
+        'cursos'
+        'img'
+        'form'
+    ;
+    gap: 1rem;
+}
+@media (min-width: 768px) {
+    
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'banner banner'
+            'cursos img'
+            'form form'
+        ;
+    }
+}
+
+#section-banner {
+    grid-area: banner;
+}
+#section-cursos {
+    grid-area: cursos;
+}
+#section-img {
+    grid-area: img;
+}
+#section-form {
+    grid-area: form;
+}
