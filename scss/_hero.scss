@@ -22,6 +22,14 @@
         font-weight: var(--font-bold);
         margin-bottom: 20px;
     }
+    @media (max-width:768px) {
+        .hero {
+            &__title {
+                font-size: 2rem;
+            }
+        }
+        
+    }
     
 }
 

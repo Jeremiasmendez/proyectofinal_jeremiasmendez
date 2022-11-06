@@ -30,6 +30,15 @@
         justify-content: center;
         align-items: center;
     }
+    @media (max-width:768px) {
+        .header {
+            &__logo {
+                font-size: 20px;
+            }
+        }
+        
+    }
+    
 }
 
 .nav-link {
@@ -70,4 +79,23 @@
     }
 }
 
+.contacto__logo {
+    font-family: horizon;
+    letter-spacing: 3px;
+    background-color: var(--color-brown);
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--color-white);
+}
+@media (max-width:768px) {
+    .contacto__logo {
+        
+            font-size: 20px;
+        
+    }
+    
+}
 
