@@ -9,11 +9,14 @@
         
     }
     &__titulo {
-        font-size: 2.5rem;
+        font-family: horizon;
+        font-size: 2rem;
         width: 100%;
         color: var(--color-brown);
-        font-weight: 800;
+        font-weight: bold;
         padding: 20px;
+        text-align: center;
+    
     }
     &__img {
         border-radius: 40px;
@@ -25,16 +28,45 @@
     }
     &__parrafo {
         padding: 20px;
+        font-size: 20px;
+        font-weight: 500;
     }
+
+    &__tec {
+        font-family: horizon;
+        color: var(--color-brown);
+        font-weight: bolder;
+        margin: 0 20px;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+
     @media (min-width: 768px) {
+        .cursos {
+            &__titulo {
+                font-size: 3rem;
+                text-align: center;
+            }
+            &__img {
+                height: 400px;
+            }
+    
+            }
         
-        .cursos__titulo {
-            font-size: 5rem;
+    }
+    @media (min-width: 1024px) {
+        .cursos {
+        &__titulo {
+            font-size: 3rem;
+            text-align: start;
         }
-        .cursos__img {
-            height: 500px;
+        &__img {
+            height: 350px;
+        }
+
         }
     }
+
 }
 
 /* COVER */
@@ -47,15 +79,17 @@
         
     }
     &__titulo {
-        font-size: 2.5rem;
+        font-family: horizon;
+        font-size: 3rem;
         width: 100%;
         color: var(--color-brown);
-        font-weight: 800;
+        font-weight: bold;
         padding: 20px;
+        
     }
     &__img {
         border-radius: 40px;
-        height: 250px;
+        height: 500px;
         width: 100%;
         object-fit: cover;
         padding: 10px;
@@ -63,47 +97,100 @@
     }
     &__parrafo {
         padding: 20px;
+        font-size: 20px;
+        font-weight: 500;
     }
-    @media (min-width: 768px) {
-    
-        .cover__titulo {
-            font-size: 5rem;
-        }
-        .cover__img {
-            height: 500px;
-        }
-    }
-}
 
+    @media (max-width:1023px) {
+        .cover {
+            &__titulo {
+                font-size: 2.5rem;
+                text-align: center;
+            }
+            &__img {
+                height: 450px;
+            }
+            
+        }
+
+    
+    }
+
+    @media (max-width: 767px) {
+        
+        .cover {
+            
+            &__titulo {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            &__img {
+                height: 500px;
+            }
+            &__parrafo {
+                font-size: 20px;
+            }
+        }
+    }
+
+    
+
+}
 /* SOBRE NOSOTROS */
 
-.integrante {
+.nosotros {
     display: grid;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    grid-template-columns: 1fr;
-    &__img  img {
-        height: 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img" "parrafo";
+
+     
+    &__img img {
+        height: 100%;
         width: 100%;
         object-fit: cover;
         padding: 20px;
+        border-radius: 40px;
+        grid-area: img;
     }
-    &__name {
-        font-size: 2.5rem;
+    &__title {
+        font-family: horizon;
+        font-size: 3rem;
         width: 100%;
         color: var(--color-brown);
-        font-weight: 800;
+        font-weight: bold;
         padding: 20px;
+        grid-area: parrafo;
     }
-    &__parrafo {
+    &__text {
         padding: 20px;
+        font-size: 20px;
+        font-weight: 500;
+        grid-area: parrafo;
     }
-    @media (min-width :768px) {
-        .integrante {
-            grid-template-columns: 1fr 2fr;
+
+    @media (max-width: 1023px) {
+        grid-template-columns: 1fr;
+        .nosotros {
+            
+
+            &__img {
+                height: 400px;
+            }
+            &__title {
+                text-align: center;
+            }
+            &__text {
+                text-align: center;
+            }
+
         }
+        
+        
     }
+    
 
 }
 
@@ -112,4 +199,23 @@
 .formulario {
     margin-top: 3rem;
     margin-bottom: 3rem;
+}
+.mb-3 {
+    font-family: horizon;
+    color: var(--color-brown);
+    font-weight: bolder;
+    text-align: center; 
+}
+
+@media (min-width:768px) {
+    .mb-3 {
+        text-align: center;
+        font-size: 20px;
+    }
+@media (min-width:1023px) {
+    .mb-3 {
+        text-align: start;
+        font-size: 25px;
+    }
+}
 }

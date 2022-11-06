@@ -1,5 +1,5 @@
 .hero {
-    background-image: url(../img/mic.png);
+    background-image: url(../img/mic.svg);
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -16,10 +16,13 @@
         justify-content: center;
     }
     &__title {
-        font-size: 4rem;
+        font-family: horizon;
+        font-size: 3rem;
         color: var(--color-white);
         font-weight: var(--font-bold);
+        margin-bottom: 20px;
     }
+    
 }
 
 .banner {
@@ -32,4 +35,13 @@
     height: 150px;
     padding: 20px;
 }
+
+.banner h6 {
+    font-weight: 150px;
+}
+
+#section-banner {
+    font-weight: bolder;
+}
+
 
